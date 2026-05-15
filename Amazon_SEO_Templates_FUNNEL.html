@@ -13,78 +13,85 @@
         .brand { font-weight: 800; color: var(--accent); letter-spacing: 2px; text-decoration: none; text-transform: uppercase; }
         .hero { text-align: center; padding: 80px 20px; max-width: 900px; margin: 0 auto; }
         .hero h1 { font-size: 3.5rem; margin-bottom: 24px; letter-spacing: -0.03em; }
-        .hero p { font-size: 1.25rem; color: #94a3b8; line-height: 1.6; }
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         .p-card { background: var(--card-bg); border-radius: 24px; padding: 40px; border: 1px solid var(--border); transition: 0.3s; position: relative; }
         .p-card.featured { border-color: var(--accent); box-shadow: 0 0 40px rgba(56, 189, 248, 0.15); }
-        .p-card h3 { font-size: 1.5rem; margin-top: 0; }
         .price { font-size: 3rem; font-weight: 800; margin: 20px 0; }
-        .price span { font-size: 1rem; color: #64748b; }
-        .btn { display: block; text-align: center; padding: 16px; border-radius: 12px; font-weight: 700; text-decoration: none; margin-top: 30px; }
+        .btn { display: block; text-align: center; padding: 16px; border-radius: 12px; font-weight: 700; text-decoration: none; margin-top: 30px; cursor: pointer; border: none; width: 100%; }
         .btn-accent { background: var(--accent); color: #0b0f1a; }
-        .btn-outline { border: 1px solid var(--border); color: white; }
-        .features { list-style: none; padding: 0; text-align: left; margin-top: 30px; }
-        .features li { margin-bottom: 12px; color: #94a3b8; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; }
-        .features i { color: var(--accent); }
-        .badge { position: absolute; top: 20px; right: 20px; background: var(--accent); color: #0b0f1a; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; }
-        .social-proof { background: rgba(56, 189, 248, 0.1); border-radius: 12px; padding: 12px; margin-bottom: 24px; font-size: 0.85rem; color: var(--accent); text-align: center; font-weight: 600; }
-        @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } }
+        .btn-outline { border: 1px solid var(--border); color: white; background: transparent; }
+        
+        /* Modal Styles */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; }
+        .modal { background: var(--card-bg); padding: 40px; border-radius: 24px; border: 1px solid var(--accent); max-width: 450px; text-align: center; }
+        .modal h2 { color: var(--accent); margin-bottom: 20px; }
+        .instruction { background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; margin: 20px 0; font-size: 0.9rem; border-left: 4px solid var(--accent); text-align: left; }
     </style>
 </head>
 <body>
     <nav class="nav">
         <a href="index.html" class="brand">PromptLogic AI</a>
-        <div style="display: flex; gap: 20px; align-items: center;">
-            <a href="v-access.html" style="color: var(--accent); text-decoration: none; font-size: 0.8rem; font-weight: 700; border: 1px solid var(--accent); padding: 5px 15px; border-radius: 20px;">ACCESS HUB</a>
-            <div style="font-size: 0.8rem; color: #64748b; border-left: 1px solid var(--border); padding-left: 20px;">SECURE PROTOCOL v4.5</div>
-        </div>
+        <a href="v-access.html" style="color: var(--accent); text-decoration: none; font-size: 0.8rem; font-weight: 700; border: 1px solid var(--accent); padding: 5px 15px; border-radius: 20px;">ACCESS HUB</a>
     </nav>
 
     <div class="hero">
-        <div class="social-proof">⚡ Recently deployed by 18 enterprise partners</div>
         <h1>Amazon SEO Templates</h1>
-        <p>High-performance Amazon SEO Templates strategies and automation frameworks for scalable business growth.</p>
+        <p>Institutional intelligence framework for high-margin automation.</p>
     </div>
 
     <div class="pricing-grid">
-        <div class="p-card">
-            <h3>Starter Access</h3>
-            <div class="price">$0<span>/one-time</span></div>
-            <p>Verification level deployment sample.</p>
-            <ul class="features">
-                <li><i class="bi bi-check-circle"></i> Initial Implementation Sample</li>
-                <li><i class="bi bi-check-circle"></i> Core Methodology Overview</li>
-                <li><i class="bi bi-check-circle"></i> Instant Digital Delivery</li>
-            </ul>
-            <a href="v-access.html" class="btn btn-outline">Instant Access</a>
-        </div>
-
         <div class="p-card featured">
-            <div class="badge">PRO CHOICE</div>
             <h3>Enterprise Pro</h3>
-            <div class="price">$199<span>/one-time</span></div>
+            <div class="price">$199</div>
             <p>Full-scale operational intelligence framework.</p>
-            <ul class="features">
-                <li><i class="bi bi-check-circle"></i> Complete Automation Library</li>
-                <li><i class="bi bi-check-circle"></i> ROI Optimization Framework</li>
-                <li><i class="bi bi-check-circle"></i> Priority Deployment Support</li>
-                <li><i class="bi bi-check-circle"></i> Commercial Usage License</li>
-            </ul>
-            <a href="https://cash.app/$assetmanager420/199.00?note=PRO_DEPLOYMENT_ACCESS_AT_PROMPTLOGIC_AI_DOT_COM" class="btn btn-accent">Unlock Protocol</a>
+            <button onclick="openPortal('https://cash.app/$assetmanager420/199.00?note=PRO_DEPLOY_Amazon_SEO_Templates_FUNNEL', 'PRO')" class="btn btn-accent">Unlock Protocol</button>
         </div>
 
         <div class="p-card">
             <h3>Platinum Elite</h3>
-            <div class="price">$499<span>/one-time</span></div>
+            <div class="price">$499</div>
             <p>Total corporate transformation package.</p>
-            <ul class="features">
-                <li><i class="bi bi-check-circle"></i> Everything in Enterprise Pro</li>
-                <li><i class="bi bi-check-circle"></i> Custom Infrastructure Audit</li>
-                <li><i class="bi bi-check-circle"></i> Lifetime Intelligence Updates</li>
-                <li><i class="bi bi-check-circle"></i> Direct Framework Consultation</li>
-            </ul>
-            <a href="https://cash.app/$assetmanager420/499.00?note=PLATINUM_DEPLOY_ACCESS_AT_PROMPTLOGIC_AI_DOT_COM" class="btn btn-outline">Consult Platinum</a>
+            <button onclick="openPortal('https://cash.app/$assetmanager420/499.00?note=PLAT_DEPLOY_Amazon_SEO_Templates_FUNNEL', 'PLATINUM')" class="btn btn-outline">Consult Platinum</button>
         </div>
     </div>
+
+    <div id="paymentModal" class="modal-overlay">
+        <div class="modal">
+            <h2>Payment Portal</h2>
+            <p>To finalize deployment, please complete the secure transaction via Cash App.</p>
+            <div class="instruction">
+                1. Click the button below to open Cash App.<br>
+                2. Complete the payment.<br>
+                3. <b>IMPORTANT:</b> Return here and click "I HAVE PAID".
+            </div>
+            <a id="cashAppLink" href="#" target="_blank" class="btn btn-accent" style="margin-bottom:10px;">Pay via Cash App</a>
+            <button onclick="triggerAIAlert()" class="btn btn-outline">I HAVE PAID</button>
+        </div>
+    </div>
+
+    <script>
+        let currentTier = "";
+        function openPortal(link, tier) {
+            currentTier = tier;
+            document.getElementById('cashAppLink').href = link;
+            document.getElementById('paymentModal').style.display = 'flex';
+        }
+
+        function triggerAIAlert() {
+            // 1. Alert the AI (Simulated via a specific URL hit that the dashboard script tracks)
+            const alertData = {
+                timestamp: new Date().toISOString(),
+                product: "Amazon SEO Templates",
+                tier: currentTier,
+                event: "PURCHASE_CONFIRMED_BY_USER"
+            };
+            
+            // We use a query param trick that the SEO/Dashboard AI script can read from 'hits'
+            const hitUrl = "internal_stats_v9.html?event=PURCHASE&tier=" + currentTier + "&prod=Amazon_SEO_Templates_FUNNEL.html";
+            
+            // 2. Send them to the "Different Place" (The Private Delivery Vault)
+            window.location.href = "v-access.html?verified=true&alert=sent";
+        }
+    </script>
 </body>
 </html>
