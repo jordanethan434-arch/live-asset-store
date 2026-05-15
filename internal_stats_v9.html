@@ -1,43 +1,46 @@
 
-    <html>
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intelligence Hub | PromptLogic AI</title>
         <style>
-            body { font-family: sans-serif; background: #0e1111; color: #00ff41; padding: 20px; text-align: center; }
-            .stat-box { border: 1px solid #00ff41; padding: 20px; margin: 10px; display: inline-block; width: 80%; border-radius: 10px; }
-            h1 { color: white; text-transform: uppercase; letter-spacing: 2px; }
-            .value { font-size: 2.5em; font-weight: bold; display: block; }
-            .label { font-size: 0.9em; text-transform: uppercase; color: #888; }
-            .status { color: #28a745; }
-            .product-list { text-align: left; display: inline-block; width: 80%; margin-top: 20px; }
+            :root { --bg: #0f172a; --card-bg: #1e293b; --accent: #38bdf8; --text: #f1f5f9; --text-dim: #94a3b8; }
+            body { font-family: 'Inter', system-ui, sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 40px 20px; text-align: center; }
+            .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+            .stat-card { background: var(--card-bg); padding: 30px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); }
+            .stat-value { font-size: 2.5rem; font-weight: 800; display: block; color: var(--accent); }
+            .stat-label { color: var(--text-dim); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.1em; }
+            h1 { margin-bottom: 40px; }
         </style>
     </head>
     <body>
-        <h1>$PromptLogic AI Earnings Dashboard</h1>
-        <p>System Status: <span class="status">AUTONOMOUS & ACTIVE</span></p>
-        
-        <div class="stat-box">
-            <span class="value">20</span>
-            <span class="label">Total Products Manufactured</span>
-        </div>
-        
-        <div class="stat-box">
-            <span class="value">28</span>
-            <span class="label">Live Marketing Pages</span>
+        <div class="brand">PromptLogic AI INTERNAL</div>
+        <h1>Performance Intelligence</h1>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Unique Visitors</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Total Page Views</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">35</span>
+                <span class="stat-label">Total Assets</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">$1,715</span>
+                <span class="stat-label">Inventory Value</span>
+            </div>
         </div>
 
-        <div class="stat-box">
-            <span class="value">$580.00</span>
-            <span class="label">Potential Capital Value (Stock)</span>
+        <div style="margin-top: 60px; color: #4ade80; font-family: monospace;">
+            [SYNC_OK] 2026-05-15 21:43:13 | ENCRYPTED CHANNEL ACTIVE
         </div>
-
-        <div class="product-list">
-            <h3>System Heartbeat:</h3>
-            <p>Last Sync: 2026-05-15 21:15:17</p>
-            <p>Target: 100% Zero-Interaction Revenue</p>
-        </div>
-        
-        <p style="margin-top:50px; font-size:0.7em; color:#444;">Encrypted and running in sandbox. No human intervention required.</p>
     </body>
     </html>
     
