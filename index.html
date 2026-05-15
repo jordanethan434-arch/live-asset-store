@@ -5,338 +5,281 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PromptLogic AI | Premium Business Intelligence</title>
     <style>
-        :root {
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #38bdf8;
-            --text: #f1f5f9;
-            --text-dim: #94a3b8;
-        }
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-            max-width: 800px;
-        }
-        .brand {
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            font-size: 0.875rem;
-            font-weight: 800;
-            margin-bottom: 16px;
-        }
-        h1 {
-            font-size: 3rem;
-            margin: 0 0 20px;
-            letter-spacing: -0.02em;
-        }
-        .subtitle {
-            color: var(--text-dim);
-            font-size: 1.25rem;
-            line-height: 1.6;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 24px;
-            width: 100%;
-            max-width: 1100px;
-        }
-        .card {
-            background: var(--card-bg);
-            padding: 32px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.05);
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .card:hover {
-            transform: translateY(-8px);
-            border-color: var(--accent);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-        }
-        .card h3 {
-            margin: 0 0 12px;
-            font-size: 1.5rem;
-        }
-        .card p {
-            color: var(--text-dim);
-            font-size: 0.95rem;
-            margin-bottom: 24px;
-            line-height: 1.5;
-        }
-        .price-tag {
-            color: var(--accent);
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-        .dashboard-banner {
-            width: 100%;
-            max-width: 1100px;
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
-            padding: 2px;
-            border-radius: 20px;
-            margin-bottom: 40px;
-            text-decoration: none;
-        }
-        .dashboard-inner {
-            background: var(--bg);
-            padding: 24px;
-            border-radius: 19px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .dashboard-inner span {
-            color: white;
-            font-weight: 700;
-        }
-        .btn-small {
-            background: var(--accent);
-            color: #0f172a;
-            padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 0.875rem;
-            font-weight: 700;
-        }
+        :root { --bg: #0f172a; --card-bg: #1e293b; --accent: #38bdf8; --text: #f1f5f9; --text-dim: #94a3b8; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); margin: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
+        header { text-align: center; margin-bottom: 60px; max-width: 800px; }
+        .brand { color: var(--accent); text-transform: uppercase; letter-spacing: 0.3em; font-size: 0.875rem; font-weight: 800; margin-bottom: 16px; }
+        h1 { font-size: 3rem; margin: 0 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; width: 100%; max-width: 1100px; }
+        .card { background: var(--card-bg); padding: 32px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); text-decoration: none; color: inherit; transition: 0.3s; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-8px); border-color: var(--accent); }
+        .price-tag { color: var(--accent); font-weight: 700; margin-top: 10px; }
+        h3 { margin-top: 0; }
     </style>
 </head>
 <body>
     <header>
         <div class="brand">PromptLogic AI</div>
         <h1>The Professional Intelligence Exchange</h1>
-        <p class="subtitle">High-performance prompt engineering and automation assets for modern small businesses.</p>
     </header>
-
-    <a href="dashboard.html" class="dashboard-banner">
-        <div class="dashboard-inner">
-            <span>System Analytics Dashboard</span>
-            <div class="btn-small">Live Metrics</div>
-        </div>
-    </a>
-
     <div class="grid">
-        <a href="PromptLogic AI_Cash_App_Clone_FUNNEL.html" class="card">
-            <div>
-                <h3>PromptLogic AI Cash App Clone</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
-            </div>
-            <span class="price-tag">Premium Access</span>
-        </a>
-        <a href="PromptLogic AI_Cash_App_FUNNEL.html" class="card">
-            <div>
-                <h3>PromptLogic AI Cash App</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
-            </div>
-            <span class="price-tag">Premium Access</span>
-        </a>
-        <a href="PromptLogic AI_Cash_App_Guide_FUNNEL.html" class="card">
-            <div>
-                <h3>PromptLogic AI Cash App Guide</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
-            </div>
-            <span class="price-tag">Premium Access</span>
-        </a>
-        <a href="PromptLogic AI_Cash_App_Template_FUNNEL.html" class="card">
-            <div>
-                <h3>PromptLogic AI Cash App Template</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
-            </div>
-            <span class="price-tag">Premium Access</span>
-        </a>
         <a href="AI-Powered_Business_Automation_Bundle_FUNNEL.html" class="card">
             <div>
                 <h3>AI-Powered Business Automation Bundle</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI-Powered_Business_Bundle_FUNNEL.html" class="card">
             <div>
                 <h3>AI-Powered Business Bundle</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="AI-Powered_Productivity_Bundle_FUNNEL.html" class="card">
+            <div>
+                <h3>AI-Powered Productivity Bundle</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI-Powered_Productivity_Bundle_for_Small_Businesses_FUNNEL.html" class="card">
             <div>
                 <h3>AI-Powered Productivity Bundle for Small Businesses</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI-Powered_Sales_Engine_Bundle_for_Small_Businesses_FUNNEL.html" class="card">
             <div>
                 <h3>AI-Powered Sales Engine Bundle for Small Businesses</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="AI_Prompt_Bundle_for_Efficiency_Boost_FUNNEL.html" class="card">
+            <div>
+                <h3>AI Prompt Bundle for Efficiency Boost</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI_Prompt_Bundle_for_Small_Business_Owners_FUNNEL.html" class="card">
             <div>
                 <h3>AI Prompt Bundle for Small Business Owners</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI_Prompt_Bundle_for_Small_Businesses_FUNNEL.html" class="card">
             <div>
                 <h3>AI Prompt Bundle for Small Businesses</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI_Prompt_Engineering_Bundle_for_Small_Businesses_FUNNEL.html" class="card">
             <div>
                 <h3>AI Prompt Engineering Bundle for Small Businesses</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="AI_Prompt_Master_Bundle_for_E-commerce_and_Hiring_Automation_FUNNEL.html" class="card">
             <div>
                 <h3>AI Prompt Master Bundle for E-commerce and Hiring Automation</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Affiliate_Mastery_Kit_FUNNEL.html" class="card">
             <div>
                 <h3>Affiliate Mastery Kit</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Amazon_SEO_Templates_FUNNEL.html" class="card">
             <div>
                 <h3>Amazon SEO Templates</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Asset_Manager_Blueprint_FUNNEL.html" class="card">
             <div>
                 <h3>Asset Manager Blueprint</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Asset_Manager_Template_Kit_FUNNEL.html" class="card">
             <div>
                 <h3>Asset Manager Template Kit</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="AutoAdmin_Pro_FUNNEL.html" class="card">
+            <div>
+                <h3>AutoAdmin Pro</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="AutoBoss_Pro_FUNNEL.html" class="card">
+            <div>
+                <h3>AutoBoss Pro</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="AutoFlow_Pro_FUNNEL.html" class="card">
+            <div>
+                <h3>AutoFlow Pro</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="AutoPilot_Pro_FUNNEL.html" class="card">
+            <div>
+                <h3>AutoPilot Pro</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Automated_Social_Media_Content_Template_Pack_FUNNEL.html" class="card">
             <div>
                 <h3>Automated Social Media Content Template Pack</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="Automation_Pro_Bundle_FUNNEL.html" class="card">
+            <div>
+                <h3>Automation Pro Bundle</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Done-for-You_Social_Media_Templates_FUNNEL.html" class="card">
             <div>
                 <h3>Done-for-You Social Media Templates</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="Enterprise_Deployment_Protocol_FUNNEL.html" class="card">
+            <div>
+                <h3>Enterprise Deployment Protocol</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Exclusive_Niche_Templates_FUNNEL.html" class="card">
             <div>
                 <h3>Exclusive Niche Templates</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Expert_AI_Bundle_for_Small_Businesses_FUNNEL.html" class="card">
             <div>
                 <h3>Expert AI Bundle for Small Businesses</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Portable_Air_Purifier_FUNNEL.html" class="card">
             <div>
                 <h3>Portable Air Purifier</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Portable_Fitness_Equipment_FUNNEL.html" class="card">
             <div>
                 <h3>Portable Fitness Equipment</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Portable_Power_Bank_FUNNEL.html" class="card">
             <div>
                 <h3>Portable Power Bank</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Portable_Power_Bank_with_Built-in_Massage_Function_FUNNEL.html" class="card">
             <div>
                 <h3>Portable Power Bank with Built-in Massage Function</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Premium_WordPress_Plugins_for_Influencers_FUNNEL.html" class="card">
             <div>
                 <h3>Premium WordPress Plugins for Influencers</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Pro_Affiliate_Copywriter_Template_Kit_FUNNEL.html" class="card">
             <div>
                 <h3>Pro Affiliate Copywriter Template Kit</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="Professional_Automation_Framework_FUNNEL.html" class="card">
+            <div>
+                <h3>Professional Automation Framework</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="Scalable_Revenue_Engine_FUNNEL.html" class="card">
+            <div>
+                <h3>Scalable Revenue Engine</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+        <a href="SmartOps_Bundle_FUNNEL.html" class="card">
+            <div>
+                <h3>SmartOps Bundle</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Social_Media_Content_Calendar_Template_FUNNEL.html" class="card">
             <div>
                 <h3>Social Media Content Calendar Template</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Social_Media_Content_Packs_FUNNEL.html" class="card">
             <div>
                 <h3>Social Media Content Packs</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
         <a href="Social_Media_Content_Templates_FUNNEL.html" class="card">
             <div>
                 <h3>Social Media Content Templates</h3>
-                <p>Expertly crafted AI automation strategies and prompt sequences for scalable growth.</p>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
             </div>
             <span class="price-tag">Premium Access</span>
         </a>
-    </div>
-
-    <footer style="margin-top: 100px; color: var(--text-dim); font-size: 0.8rem;">
-        &copy; 2026 PromptLogic AI. All rights reserved. Managed by Secure Proxy for PromptLogic AI.
-    </footer>
-</body>
-</html>
+        <a href="Strategic_Asset_Management_Guide_FUNNEL.html" class="card">
+            <div>
+                <h3>Strategic Asset Management Guide</h3>
+                <p>High-performance AI strategies and automation frameworks for scalable business growth.</p>
+            </div>
+            <span class="price-tag">Premium Access</span>
+        </a>
+    </div></body></html>
